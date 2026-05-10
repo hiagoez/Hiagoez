@@ -1,14 +1,14 @@
 body::before {
-  content: "Olá";
+  content: "";
   position: fixed;
   inset: 0;
 
-  background: url("images.jpg") center/cover no-repeat;
+  background: rgb(158, 247, 225);
+
   filter: blur(8px) brightness(50%);
 
   z-index: -1;
 }
-
 img {
   width: 200px;
   height: 200px;
