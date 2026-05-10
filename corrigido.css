@@ -1,0 +1,87 @@
+body::before {
+  content: "Olá";
+  position: fixed;
+  inset: 0;
+
+  background: url("images.jpg") center/cover no-repeat;
+  filter: blur(8px) brightness(50%);
+
+  z-index: -1;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+
+  background-color: rgba(0,0,0,0.3);
+  padding: 5px;
+
+  transition: 0.5s ease;
+}
+/* Girar */
+.im1:hover {
+  transform: rotate(360deg);
+}
+
+/* Inclinar */
+.im2:hover {
+  transform: skew(-15deg);
+}
+
+/* Zoom */
+.im3:hover {
+  transform: scale(1.5);
+}
+
+/* Mover */
+.im4:hover {
+  transform: translateY(-20px);
+}
+
+/* Blur */
+.im5:hover {
+  filter: blur(3px);
+}
+
+/* Sombra */
+.im6:hover {
+  filter: drop-shadow(0 0 15px black);
+}
+
+/* Transparente */
+.im7:hover {
+  opacity: 0.1;
+}
+
+/* Preto e branco */
+.im8:hover {
+  filter: grayscale(500%);
+}
+
+/* Brilho */
+.im9:hover {
+  filter: brightness(500%);
+}
+
+/* Contraste */
+.im10:hover {
+  filter: contrast(500%);
+}
+
+/* Inverter */
+.im11:hover {
+  filter: invert(500%);
+}
+
+/* Misturado */
+.im12:hover {
+  transform: scale(1.5) rotate(20deg);
+  filter: brightness(500%);
+}
+
+/* Glow bonito */
+.im13:hover {
+  transform: scale(1.1);
+  filter: brightness(120%) drop-shadow(0 0 20px gold);
+}
